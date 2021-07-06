@@ -1,0 +1,51 @@
+
+*{
+    &, 
+    &::after,
+    &::before {
+        margin:0;
+        padding:0;
+        box-sizing: inherit;
+    } 
+}
+
+ul {
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0; /* To remove default left padding */
+    // padding-inline-start:0;
+}
+
+html {
+    font-size: 62.5%;    
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-weight: 300;
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+}
+
+h1 {
+    color: $color-text;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block; 
+    text-decoration: none;
+}
+
+.container {
+    margin: 10px auto;
+}
+

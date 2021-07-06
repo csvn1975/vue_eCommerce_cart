@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="toast.css">
+
+    <style>
+        .btn{
+            padding: 5px 8px;
+        }
+        button#error {
+            color: coral;
+        }
+
+        button#info {
+            color: #2F86EB;
+        }
+
+        button#success {
+            color: #47D764;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div id='left1'>
+    </div>
+
+    <div id="toast">
+    </div>
+
+    <button class="btn btn_succes" id="success">Toast success</button>
+    <button class="btn btn_info" id="error">Toast info</button>
+    <button class="btn btn_error" id="info">Toast errro</button>
+
+
+    <script src="toast.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            var btnSuccess = document.querySelector('#success')
+            var btnInfo = document.querySelector('#info')
+            var btnError = document.querySelector('#error')
+            
+            btnSuccess.addEventListener('click', showSuccess);
+            btnInfo.addEventListener('click', showInfo);
+            btnError.addEventListener('click', showError);
+
+            function showSuccess(){
+                toast({
+                    type: 'success',
+                    duration: 4000,
+                    msg: 'das is t ein Test für Success',
+                    parent: '#toast'
+                })
+            }
+            
+            function showInfo(){
+                toast({
+                    title: 'Information', 
+                    type: 'info',
+                    msg: 'das is t ein Test für info',
+                    duration: 5000
+                    })
+            }
+
+            function showError(){
+                toast({
+                        title: 'Error',     
+                        type: 'error',
+                        msg: 'das is t ein Test für Error',
+                        duration: 3000
+                    })
+            }
+                
+        });
+    </script>
+
+</body>
+</html>

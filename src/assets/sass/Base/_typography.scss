@@ -1,0 +1,57 @@
+.heading-main {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.heading-primary{
+    font-size: 1.6rem;
+    display: inline-flex;
+    text-align: left;
+    color: $color-heading;
+    background-color: $color-white;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 300;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+.heading-secondary, 
+.heading-secondary-border {
+    font-size: 1.2rem;
+    display: block;
+    color: $color-heading;
+    background-color: $color-white;
+    padding-left: 10px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: 300;
+    &:hover {
+        cursor: default;
+    }
+}
+
+.heading-secondary-border {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    :not(:last-child){
+        margin-bottom: 3rem ;
+    }
+}
