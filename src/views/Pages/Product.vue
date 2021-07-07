@@ -1,12 +1,14 @@
 <template>
  <div class="products">
-      <h1 class="heading-main"> {{ title }}</h1>
+      <h1 class="heading-main"
+      > {{ title }}</h1>
+
        <div class="row sm-gutter product__list">
            <div class="col l-2-4 c-6 m-4 l-3 product__item"
                 v-for="product  in products"
                     :key= "product.id"
            >
-            <product-item :product= "product"></product-item> 
+            <product-item ref="product" :product= "product"></product-item> 
            </div>
         </div> 
  </div>
@@ -30,6 +32,14 @@ export default {
   
     mounted(){
        this.products = this.product.products;
+
+    },
+
+    methods:{
+       /*  handleRef(){
+            var ref = this.$refs.product;
+            console.log(ref.product);
+        } */
     },
 
     components:{

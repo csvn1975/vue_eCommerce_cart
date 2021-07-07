@@ -5,11 +5,11 @@
       <router-link class="nav-menu__item" :to="{ name: 'Product' }"
         >Products</router-link
       >
-      <router-link class="nav-menu__item nav-menu__item--about" to="/about">About</router-link>
+    <router-link class="nav-menu__item nav-menu__item--about" to="/about">About</router-link>
     </div>
     <div class="nav-menu__right">
-      <a class="nav-menu__item" href="#">Register</a>
-      <a class="nav-menu__item" href="#">Login</a>
+      <!-- <a class="nav-menu__item" href="#">Register</a>
+      <a class="nav-menu__item" href="#">Login</a> -->
       <span class="nav-menu__item--cart">
         <CartHeader></CartHeader>
       </span>

@@ -99,6 +99,10 @@ export default {
         return className + "fas fa-star-half-alt";
       else return className + "far fa-star";
     },
+
+    test(){
+      alert('ref')
+    }
   },
 };
 </script>
